@@ -1,0 +1,57 @@
+{
+  "name": "sn-controls-react",
+  "version": "0.0.0-development",
+  "description": "React controls for sensenet ECM",
+  "main": "index.js",
+  "scripts": {
+    "lint": "node tslint --project ./tsconfig.json",
+    "clean": "rimraf dist",
+    "commit": "git-cz",
+    "pretest": "npm run build",
+    "test": "nyc mocha -p tsconfig.json dist/test/index.js",
+    "check-coverage": "istanbul check-coverage ",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
+    "prebuild": "npm run lint && npm run clean",
+    "build": "tsc",
+    "publish:development": "npm publish --tag development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SenseNet/sn-controls-react.git"
+  },
+  "keywords": [
+    "sensenet",
+    "ecm",
+    "react",
+    "reactjs",
+    "controls",
+    "components"
+  ],
+  "author": "SenseNet",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/SenseNet/sn-controls-react/issues"
+  },
+  "homepage": "https://sensenet.com",
+  "czConfig": {
+    "path": "node_modules/cz-conventional-changelog"
+  },
+  "typings": "./src/sn-controls-react.d.ts",
+  "devDependencies": {
+    "@types/chai": "^3.5.2",
+    "@types/mocha": "^2.2.41",
+    "chai": "^3.5.0",
+    "codecov.io": "^0.1.6",
+    "commitizen": "^2.9.6",
+    "cz-conventional-changelog": "^2.0.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.1",
+    "mocha-typescript": "^1.1.4",
+    "rimraf": "^2.6.1",
+    "tslint": "^5.3.2",
+    "typescript": "^2.3.3"
+  },
+  "dependencies": {
+    "nyc": "^10.3.2"
+  }
+}

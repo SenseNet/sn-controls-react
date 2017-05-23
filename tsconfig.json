@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "removeComments": true,
+        "noImplicitAny": false,
+        "target": "es2015",
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "sourceMap": true,
+        "declaration": false,
+        "preserveConstEnums": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "outDir": "./dist"
+    },
+    "exclude": [
+        "node_modules",
+        "dist"
+    ],
+    "compileOnSave": false,
+    "files": [
+        "src/sn-controls-react.ts",
+        "test/index.ts"
+    ]
+}
