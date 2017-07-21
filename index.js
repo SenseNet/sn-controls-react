@@ -1,1 +1,1 @@
-module.exports = require('./dist/src/sn-react-controls');
+module.exports = require('./build/dist/index');

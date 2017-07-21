@@ -1,24 +1,32 @@
 {
     "compilerOptions": {
-        "removeComments": true,
-        "noImplicitAny": false,
-        "target": "es2015",
         "module": "commonjs",
-        "moduleResolution": "node",
+        "target": "es5",
+        "lib": [
+            "es6",
+            "dom"
+        ],
         "sourceMap": true,
         "declaration": false,
+        "allowJs": true,
+        "jsx": "react",
+        "moduleResolution": "node",
+        "outDir": "./dist",
+        "noImplicitAny": false,
         "preserveConstEnums": true,
         "experimentalDecorators": true,
         "emitDecoratorMetadata": true,
-        "outDir": "./dist"
+        "removeComments": true
     },
     "exclude": [
         "node_modules",
-        "dist"
+        "documentation"
     ],
-    "compileOnSave": false,
     "files": [
-        "src/sn-controls-react.ts",
+        "src/index.ts",
         "test/index.ts"
+    ],
+    "types": [
+        "typePatches"
     ]
 }
