@@ -69,7 +69,7 @@ export class TimePicker extends React.Component<TimePickerProps, { value }> {
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
                         <Fragment>
                             <MUITimePicker
-                                defaultValue={value}
+                                value={value}
                                 onChange={this.handleDateChange}
                                 label={this.props['data-labelText']}
                                 id={this.props.name}
@@ -86,7 +86,7 @@ export class TimePicker extends React.Component<TimePickerProps, { value }> {
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
                         <Fragment>
                             <MUITimePicker
-                                defaultValue={value}
+                                value={value}
                                 onChange={this.handleDateChange}
                                 label={this.props['data-labelText']}
                                 id={this.props.name}

@@ -75,7 +75,7 @@ export class DatePicker extends React.Component<DatePickerProps, { dateValue, va
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
                         <Fragment>
                             <MUIDatePicker
-                                defaultValue={value}
+                                value={value}
                                 onChange={this.handleDateChange}
                                 label={this.props['data-labelText']}
                                 id={this.props.name}
@@ -92,7 +92,7 @@ export class DatePicker extends React.Component<DatePickerProps, { dateValue, va
                     <MuiPickersUtilsProvider utils={DateFnsUtils}>
                         <Fragment>
                             <MUIDatePicker
-                                defaultValue={value}
+                                value={value}
                                 onChange={this.handleDateChange}
                                 label={this.props['data-labelText']}
                                 id={this.props.name}
