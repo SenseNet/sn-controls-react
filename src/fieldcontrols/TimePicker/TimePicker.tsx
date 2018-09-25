@@ -3,7 +3,7 @@
  *
  */ /** */
 import { TimePicker as MUITimePicker } from 'material-ui-pickers'
-import DateFnsUtils from 'material-ui-pickers/utils/date-fns-utils'
+import MomentUtils from 'material-ui-pickers/utils/moment-utils'
 import MuiPickersUtilsProvider from 'material-ui-pickers/utils/MuiPickersUtilsProvider'
 import * as React from 'react'
 import { Fragment } from 'react'
@@ -66,7 +66,7 @@ export class TimePicker extends React.Component<TimePickerProps, { value }> {
         switch (this.props['data-actionName']) {
             case 'edit':
                 return (
-                    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                    <MuiPickersUtilsProvider utils={MomentUtils}>
                         <Fragment>
                             <MUITimePicker
                                 value={value}
@@ -83,7 +83,7 @@ export class TimePicker extends React.Component<TimePickerProps, { value }> {
                 )
             case 'new':
                 return (
-                    <MuiPickersUtilsProvider utils={DateFnsUtils}>
+                    <MuiPickersUtilsProvider utils={MomentUtils}>
                         <Fragment>
                             <MUITimePicker
                                 value={value}

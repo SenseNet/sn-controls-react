@@ -9,7 +9,6 @@ import { PathHelper } from '@sensenet/client-utils'
 import { MaterialIcon } from '@sensenet/icons-react'
 import * as React from 'react'
 import Select from 'react-select'
-import 'react-select/dist/react-select.css'
 import { ReactClientFieldSetting, ReactClientFieldSettingProps } from '../ClientFieldSetting'
 import { ReactReferenceFieldSetting } from '../ReferenceFieldSetting'
 import { Option } from './TagsInputOptions'
@@ -18,8 +17,6 @@ import { styles } from './TagsInputStyles'
 import './TagsInput.css'
 
 import { IContent, IODataCollectionResponse } from '@sensenet/client-core'
-import * as injectTapEventPlugin from 'react-tap-event-plugin'
-injectTapEventPlugin()
 
 /**
  * Interface for TagsInput properties
