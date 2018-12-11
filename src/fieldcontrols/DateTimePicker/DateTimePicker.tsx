@@ -84,7 +84,7 @@ export class DateTimePicker extends React.Component<DateTimePickerProps, DateTim
                                 value={dateValue}
                                 onChange={this.handleDateChange}
                                 label={this.props['data-labelText']}
-                                id={this.props.name}
+                                id={this.props.name as string}
                                 disabled={readOnly}
                                 placeholder={this.props['data-placeHolderText']}
                                 required={required}
@@ -101,7 +101,7 @@ export class DateTimePicker extends React.Component<DateTimePickerProps, DateTim
                                 value={dateValue}
                                 onChange={this.handleDateChange}
                                 label={this.props['data-labelText']}
-                                id={this.props.name}
+                                id={this.props.name as string}
                                 disabled={readOnly}
                                 placeholder={this.props['data-placeHolderText']}
                                 required={required}

@@ -6,9 +6,10 @@
 
 import { Repository } from '@sensenet/client-core'
 import { ControlMapper } from '@sensenet/control-mapper'
-import { ChoiceFieldSetting, DateTimeFieldSetting, FieldSetting, IntegerFieldSetting, LongTextFieldSetting, NumberFieldSetting, PasswordFieldSetting, ReferenceFieldSetting, ShortTextFieldSetting } from '@sensenet/default-content-types'
+import { BinaryFieldSetting, ChoiceFieldSetting, DateTimeFieldSetting, FieldSetting, IntegerFieldSetting, LongTextFieldSetting, NumberFieldSetting, PasswordFieldSetting, ReferenceFieldSetting, ShortTextFieldSetting } from '@sensenet/default-content-types'
 import { Component } from 'react'
 import * as FieldControls from './fieldcontrols'
+import { ReactBinaryFieldSetting } from './fieldcontrols/BinaryFieldSetting'
 import { ReactChoiceFieldSetting } from './fieldcontrols/ChoiceFieldSetting'
 import { ReactClientFieldSettingProps } from './fieldcontrols/ClientFieldSetting'
 import { ReactDateTimeFieldSetting } from './fieldcontrols/DateTimeFieldSetting'
@@ -159,4 +160,8 @@ export const reactControlMapper = (repository: Repository) => new ControlMapper(
         longTextSettings['data-minLength'] = setting.MinLength,
             longTextSettings['data-maxLength'] = setting.MaxLength
         return longTextSettings
+    })
+    .setClientControlFactory(BinaryFieldSetting, (setting) => {
+        const binarySettings = clientConfigFactory(setting) as ReactBinaryFieldSetting
+        return binarySettings
     })
