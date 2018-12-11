@@ -1,4 +1,9 @@
 # sn-controls-react
+
+------
+### This package is not under active development. You can find our latest packages in the [sensenset/sn-client](https://github.com/sensenet/sn-client) monorepo.
+------
+
 [![Greenkeeper badge](https://badges.greenkeeper.io/SenseNet/sn-controls-react.svg)](https://greenkeeper.io/)
 [![Join the chat at https://gitter.im/SenseNet/sn-controls-react](https://badges.gitter.im/SenseNet/sn-controls-react.svg)](https://gitter.im/SenseNet/sn-controls-react?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 [![License](https://img.shields.io/github/license/SenseNet/sn-controls-react.svg?style=flat)](https://github.com/SenseNet/sn-controls-react/LICENSE.txt)
